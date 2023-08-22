@@ -64,7 +64,7 @@ export const Login = () => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 ${
+      className={`min-h-screen flex flex-col  py-12 sm:px-6 lg:px-8 ${
         loggedIn ? " bg-gray-200" : " bg-gray-100"
       }`}
     >
