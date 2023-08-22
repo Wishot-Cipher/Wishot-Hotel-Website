@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import ReservationForm from "./components/ReservationForm";
-import { Navbar } from "./components/navbar";
+import { AgeNavbar} from "./components/AgeNavbar";
 import UserDashboard from "./components/UserDashboard";
 import Footer from "./components/Footer";
 import Register from "./components/Register";
@@ -12,7 +12,7 @@ import AdminDashboard from "./components/AdminDashboard";
 export const Router = () => {
   return (
     <div>
-      <Navbar />
+      <AgeNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="Reservation" element={<ReservationForm />} />

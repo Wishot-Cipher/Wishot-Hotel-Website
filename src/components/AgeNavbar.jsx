@@ -12,7 +12,7 @@ import {
 import { toast, ToastContainer } from "react-toastify";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 
-export const Navbar = () => {
+export const AgeNavbar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [active, setActive] = useState(false);
 
