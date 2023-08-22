@@ -28,22 +28,10 @@ export const Navbar = () => {
     return () => unsubscribe();
   }, []);
 
-  // const handleLogOut = async () => {
-  //   try {
-  //     await signOut(auth);
-  //     setLoggedIn(false);
-  //     toast.success("Logged out successfully!");
-  //     navigate("/");
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
 
   const navLinkStyles = ({ isActive }) => {
     return {
-      // color : isActive ? "indigo" : "normal",
       color: isActive ? "#6D7AFA" : "rgba(5, 5, 5, 0.7)",
-      // fontWeight : isActive ? "bold" : "normal",
     };
   };
 
@@ -53,7 +41,6 @@ export const Navbar = () => {
   };
   const handleBookButt = () => {
     setActive(false);
-    // console.log("am active");
   };
 
   return (
