@@ -39,7 +39,7 @@ export const AgeNavbar = () => {
 
   return (
     <div>
-      <nav className="py-1 shadow-2xl my-2 w-full md:px-2 relative">
+      <nav className="py-1 shadow-2xl my-2 lg_pro:w-full md:px-2 relative">
         <div className="w-[95%]  flex justify-between items-center mx-auto">
           <div>
             <img
@@ -49,7 +49,7 @@ export const AgeNavbar = () => {
             />
           </div>
           <div
-            className={`lg_pro:sticky absolute lg_pro:bg-white bg-gray-100 lg_pro:min-h-fit min-h-[100vh] -top-10 w-[65%] ${
+            className={`lg_pro:sticky absolute lg_pro:bg-white bg-gray-100 lg_pro:min-h-fit min-h-[100vh] -top-10 w-[65%] z-50 ${
               active
                 ? "left-[0%] transition-all duration-1000 ease-in-out"
                 : "left-[-100%] transition-all duration-1000 ease-in-out"
