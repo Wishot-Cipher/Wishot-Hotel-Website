@@ -49,10 +49,10 @@ export const AgeNavbar = () => {
             />
           </div>
           <div
-            className={`lg_pro:sticky absolute lg_pro:bg-white bg-gray-100 lg_pro:min-h-fit min-h-[100vh] -top-10 w-[65%] ${
+            className={`lg_pro:sticky absolute lg_pro:bg-white bg-gray-100 lg_pro:min-h-fit min-h-[100vh] -top-10 w-[63%] ${
               active
                 ? "left-[0%] transition-all duration-1000 ease-in-out"
-                : "left-[-63%] transition-all duration-1000 ease-in-out"
+                : "left-[-100%] transition-all duration-1000 ease-in-out"
             } lg_pro:w-auto w-full flex flex-col  pt-10 lg_pro:py-5 lg_pro:items-center lg_pro:justify-center`}
           >
             <ul className="flex lg_pro:items-center lg_pro:gap-[5px] lg_pro:flex-row flex-col w-[100%]">
