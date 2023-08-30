@@ -53,7 +53,7 @@ export const AgeNavbar = () => {
               active
                 ? "left-[0%] transition-all duration-1000 ease-in-out"
                 : "left-[-100%] transition-all duration-1000 ease-in-out"
-            } lg_pro:w-auto w-full flex flex-col  pt-10 lg_pro:py-5 lg_pro:items-center lg_pro:justify-center`}
+            } lg_pro:w-auto flex flex-col  pt-10 lg_pro:py-5 lg_pro:items-center lg_pro:justify-center`}
           >
             <ul className="flex lg_pro:items-center lg_pro:gap-[5px] lg_pro:flex-row flex-col">
               <li className=" bg-white">

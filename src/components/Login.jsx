@@ -65,7 +65,7 @@ export const Login = () => {
 
   return (
     <div
-      className={`min-h-screen  flex flex-col justify-center py-12 sm:px-6 lg:px-8 md:mx-0 bg-[url(/src/assets/loginBackground.jpg)] bg-cover bg-no-repeat ${
+      className={`min-h-[100vh]  flex flex-col justify-center sm:px-6 lg:px-8 md:mx-0 bg-[url(/src/assets/loginBackground.jpg)] bg-cover bg-no-repeat ${
         loggedIn ? " bg-gray-200" : " bg-gray-100"
       }`}
     >
