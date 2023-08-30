@@ -6,6 +6,7 @@ import {
   signOut,
   signInWithPopup,
 } from "firebase/auth";
+// import image from "../assets/loginBackground.jpg"
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -64,17 +65,18 @@ export const Login = () => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col  py-12 sm:px-6 lg:px-8 ${
+      className={`min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 md:mx-0 bg-[url(/src/assets/loginBackground.jpg)]  ${
         loggedIn ? " bg-gray-200" : " bg-gray-100"
       }`}
     >
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      <div></div>
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md my-4">
+        <h2 className="mt-4 text-center text-[30px] md:text-[35px] font-extrabold text-slate-800 text-3xl">
           Log In
         </h2>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -125,7 +127,7 @@ export const Login = () => {
                 className={`w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white ${
                   loggedIn
                     ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    : "bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 }`}
                 disabled={loggedIn}
               >

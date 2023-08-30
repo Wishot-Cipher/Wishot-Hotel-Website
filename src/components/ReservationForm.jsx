@@ -69,19 +69,20 @@ const ReservationForm = () => {
       setCheckInDate("");
       setCheckOutDate("");
       setSelectedRoom("");
-
+      toast.success("Reservation successful! Thank you for booking with us.");
       alert("Reservation successful! Thank you for booking with us.");
     } catch (error) {
       console.error("Error adding reservation:", error);
       alert("Oops! Something went wrong. Please try again later.");
+      toast.error('("Reservation successful! Thank you for booking with us.")');
     }
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container p-4">
       {user ? (
         <div>
-          <h2 className="text-2xl font-bold mb-4">Welcome, {user.email}</h2>
+          <h2 className="text-xl font-bold mb-4">Welcome, {user.email}</h2>
           <form onSubmit={handleReservation} className="max-w-md">
             <div className="mb-4">
               <label

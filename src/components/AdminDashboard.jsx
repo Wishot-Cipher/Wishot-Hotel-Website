@@ -66,11 +66,11 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container lg_pro:mx-auto p-4">
       {user ? (
         <div>
-          <h2 className="text-2xl font-bold mb-4">Welcome, Admin</h2>
-          <h3 className="text-xl font-bold mb-2">Add Available Room</h3>
+          <h2 className="text-xl font-bold mb-4">Welcome, Admin</h2>
+          <h3 className="text-lg font-bold mb-2">Add Available Room</h3>
           <form onSubmit={handleAddRoom} className="max-w-md">
             <div className="mb-4">
               <label

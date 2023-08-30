@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container lg_pro:mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Welcome to Our Hotel</h1>
       <div className="w-full">
         <img src={heroSec} alt="" className=" w-screen" />

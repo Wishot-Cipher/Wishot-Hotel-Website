@@ -59,18 +59,22 @@ const Register = () => {
     }
   };
 
-
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col py-12 sm:px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign Up</h2>
-      </div>
+    <div className="bg-gray-100 min-h-screen justify-center flex flex-col py-12 sm:px-6 lg:px-8 bg-[url(/src/assets/loginBackground.jpg)]">
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md ">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md my-4">
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-800 md:text-[35px]">
+            Sign Up
+          </h2>
+        </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" onSubmit={handleSignUp}>
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="username"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Username
               </label>
               <div className="mt-1">
@@ -88,7 +92,10 @@ const Register = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Email address
               </label>
               <div className="mt-1">
@@ -106,7 +113,10 @@ const Register = () => {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Password
               </label>
               <div className="mt-1">
@@ -149,7 +159,7 @@ const Register = () => {
                 type="submit"
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                 Sign Up 
+                Sign Up
               </button>
             </div>
           </form>
@@ -158,10 +168,16 @@ const Register = () => {
               onClick={signInWithGoogle}
               className="bg-red-600 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline"
             >
-             Sign Up with Google
+              Sign Up with Google
             </button>
           </div>
-          <div className=" text-center text-xs my-2 font-semibold">Have an acctount ? <Link className=' text-blue-500 underline font-bold' to={"/login"}> Sign In </Link> .</div>
+          <div className=" text-center text-xs my-2 font-semibold">
+            Have an acctount ?
+            <Link className=" text-blue-500 underline font-bold" to={"/login"}>
+              Sign In
+            </Link>
+            .
+          </div>
         </div>
       </div>
       <ToastContainer />
