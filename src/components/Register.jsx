@@ -61,8 +61,8 @@ const Register = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen justify-center flex flex-col sm:px-6 lg:px-8 bg-[url(/src/assets/loginBackground.jpg)]">
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md ">
-        <div className="sm:mx-auto sm:w-full sm:max-w-md my-4">
+      <div className="sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md ">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md py-4">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-800 md:text-[35px]">
             Sign Up
           </h2>

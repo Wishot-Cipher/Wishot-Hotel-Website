@@ -65,17 +65,16 @@ export const Login = () => {
 
   return (
     <div
-      className={`min-h-[100vh]  flex flex-col justify-center sm:px-6 lg:px-8 md:mx-0 bg-[url(/src/assets/loginBackground.jpg)] bg-cover bg-no-repeat ${
+      className={`min-h-screen  flex flex-col justify-center sm:px-6 lg:px-8 md:mx-0 bg-[url(/src/assets/loginBackground.jpg)] bg-cover bg-no-repeat ${
         loggedIn ? " bg-gray-200" : " bg-gray-100"
       }`}
     >
-      <div></div>
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md my-4">
-        <h2 className="mt-4 text-center text-[30px] md:text-[35px] font-extrabold text-slate-800 text-3xl">
-          Log In
-        </h2>
-      </div>
+      <div className=" sm:mx-auto sm:w-full sm:max-w-lg mx-2 border-[#86aaf9] border-4 border-opacity-30 shadow-2xl bg-white rounded-md">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md py-4">
+          <h2 className="mt-4 text-center text-[30px] md:text-[35px] font-extrabold text-slate-800 text-3xl">
+            Log In
+          </h2>
+        </div>
 
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -154,8 +153,7 @@ export const Login = () => {
               className=" text-blue-500 underline font-bold"
               to={"/register"}
             >
-              {" "}
-              Sign Up{" "}
+              Sign Up
             </Link>
           </div>
         </div>
