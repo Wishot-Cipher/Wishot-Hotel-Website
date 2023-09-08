@@ -33,7 +33,7 @@ const Home = () => {
         ))}
       </ul>
       <Link
-        to="/reservation"
+        to="/Booking"
         className="inline-block mt-4 bg-blue-500 text-white px-4 py-2 rounded"
       >
         Book Now

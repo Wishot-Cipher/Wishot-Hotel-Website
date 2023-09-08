@@ -164,7 +164,7 @@ export const AgeNavbar = () => {
                 className=" text-md font-medium text-white bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hidden smallest:block"
                 onClick={handleBookButt}
               >
-                <NavLink to={"/reservation"}>Book Now</NavLink>
+                <NavLink to={"/Booking"}>Book Now</NavLink>
               </button>
             )}
             <div className=" ml-6 block lg_pro:hidden" onClick={showMenu}>
