@@ -36,8 +36,8 @@ export const BookingSummary = () => {
       </div>
       <div className="bg-white p-4 shadow rounded">
         <h2 className="text-xl font-bold mb-4">Booking Dates</h2>
-        <p>Check-in Date: {checkInDate && checkInDate.toDateString()}</p>
-        <p>Check-out Date: {checkOutDate && checkOutDate.toDateString()}</p>
+        <p className=" font-semibold">Check-in Date: {checkInDate && checkInDate.toDateString()}</p>
+        <p className=" font-semibold">Check-out Date: {checkOutDate && checkOutDate.toDateString()}</p>
       </div>
       <div className="bg-white p-4 shadow rounded">
         <h2 className="text-xl font-bold mb-4">Selected Rooms</h2>
@@ -45,7 +45,7 @@ export const BookingSummary = () => {
           {Object.keys(roomSelection).map(
             (roomType) =>
               roomSelection[roomType] > 0 && (
-                <li key={roomType}>
+                <li key={roomType} className=" font-semibold">
                   {roomType.charAt(0).toUpperCase() + roomType.slice(1)}:{" "}
                   {roomSelection[roomType]}
                 </li>
@@ -55,9 +55,9 @@ export const BookingSummary = () => {
       </div>
       <div className="bg-white p-4 shadow-2xl rounded">
         <h2 className="text-xl font-bold mb-4">Guest Info</h2>
-        <p>Name: {guestInfo.name}</p>
-        <p>Phone Number: {guestInfo.phoneNumber}</p>
-        <p>Email: {guestInfo.email}</p>
+        <p className=" font-semibold">Name: {guestInfo.name}</p>
+        <p className=" font-semibold">Phone Number: {guestInfo.phoneNumber}</p>
+        <p className=" font-semibold">Email: {guestInfo.email}</p>
       </div>
       <Link
         to="/Booking/payment-page"
