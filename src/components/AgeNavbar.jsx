@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import agelessLogo from "../assets/AgelessLogo.png";
-import { Link, NavLink } from "react-router-dom";
+import { Form, Link, NavLink, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../config/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +10,8 @@ import { toast, ToastContainer } from "react-toastify";
 export const AgeNavbar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [active, setActive] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -42,11 +44,13 @@ export const AgeNavbar = () => {
       <nav className="py-1 shadow-2xl my-2 lg_pro:w-full md:px-2 relative">
         <div className="w-[95%]  flex justify-between items-center mx-auto">
           <div>
-            <img
-              src={agelessLogo}
-              alt="Ageless Hotel Logo"
-              className=" md:w-26 lg:h-16 w-28 h-16"
-            />
+            <Link to={"/"}>
+              <img
+                src={agelessLogo}
+                alt="Ageless Hotel Logo"
+                className=" md:w-26 lg:h-16 w-28 h-16"
+              />
+            </Link>
           </div>
           <div
             className={`lg_pro:sticky absolute lg_pro:bg-white bg-gray-100 lg_pro:min-h-fit min-h-[100vh] -top-10 w-4/6 z-50 ${

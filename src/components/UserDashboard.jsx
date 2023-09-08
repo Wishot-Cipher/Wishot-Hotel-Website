@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { auth, firestore } from "../config/firebase";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { ToastContainer } from "react-toastify";
 
@@ -28,7 +28,10 @@ const UserDashboard = () => {
       if (user) {
         setLoggedIn(true);
       } else {
-        setLoggedIn(false);
+        setLoggedIn(false)
+      }
+      if(!user){
+        return <Navigate to="/login" replace />;
       }
 
       if (user) {

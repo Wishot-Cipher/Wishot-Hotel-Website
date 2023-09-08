@@ -16,10 +16,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container lg_pro:mx-auto p-4">
+    <div className=" lg_pro:mx-auto p-0 bg-[url(/src/assets/bgtransformed.jpeg)] h-screen bg-no-repeat lg_pro:bg-cover bg-contain">
       <h1 className="text-3xl font-bold mb-4">Welcome to Our Hotel</h1>
       <div className="w-full">
-        <img src={heroSec} alt="" className=" w-screen" />
+        {/* <img src={heroSec} alt="" className=" w-screen" /> */}
       </div>
       <h2 className="text-xl font-bold mb-2">Room Types</h2>
       <ul className="list-disc ml-6">
