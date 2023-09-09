@@ -3,7 +3,7 @@ import heroSec from "../assets/hero2.png";
 import { Link } from "react-router-dom";
 // import { getRoomTypes } from '../roomTypesAPI';
 
-export const Home = () => {
+const Home = () => {
   // ... (your existing code)
 
   return (
@@ -39,4 +39,4 @@ export const Home = () => {
   );
 };
 
-// export default Home;
+export default Home;
