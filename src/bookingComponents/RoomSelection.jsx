@@ -1,4 +1,3 @@
-// booking-components/RoomSelection.js
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BookingContext } from "./BookingContext";
@@ -24,10 +23,15 @@ export const RoomSelection = () => {
     }
   };
 
+  // Check if any room is selected
+  const isAnyRoomSelected = Object.values(roomSelection).some((count) => count > 0);
+
   return (
-    <div className="text-center mt-16 grid grid-cols-2 gap-6">
+    <div className="h-[80vh] m-auto">
+    <div className="text-center mt-16 lg_pro:mt-20 grid lg:grid-cols-2 gap-6 lg_pro:w-[70%] W-[90%] lg_pro:m-auto mx-3 px-0 bg-white rounded-lg py-8 lg_pro:py-0 shadow-xl shadow-indigo-500">
+
       {Object.keys(roomSelection).map((roomType) => (
-        <div key={roomType} className="mb-4 font-serif font-bold text-lg">
+        <div key={roomType} className="mb-4 font-serif font-bold text-lg w-[50%] mx-auto">
           <p className="font-bold text-xl">
             {roomType.charAt(0).toUpperCase() + roomType.slice(1)}
           </p>
@@ -49,10 +53,14 @@ export const RoomSelection = () => {
         </div>
       ))}
       <div className="col-span-2 flex justify-center">
-        <Link to="/Booking/guest-info" className="btn bg-orange-500 text-white font-bold px-6 py-3 rounded-xl w-[40%] lg_pro:w-[20%] mb-6">
+        <Link
+          to={isAnyRoomSelected ? "/Booking/guest-info" : "#"}
+          className={`btn bg-orange-500 text-white font-bold px-6 py-3 rounded-xl w-[40%] lg_pro:w-[20%] mb-6 ${!isAnyRoomSelected ? "pointer-events-none opacity-50" : ""}`}
+        >
           Next
         </Link>
       </div>
+    </div>
     </div>
   );
 };
